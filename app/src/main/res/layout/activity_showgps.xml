@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ededed"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="定位信息"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/time_ico" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间："
+                    android:textColor="#777777" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    style="@style/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/e_ico" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="经度："
+                    android:textColor="#777777" />
+
+                <TextView
+                    android:id="@+id/tv_jd"
+                    style="@style/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/w_ico" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="纬度："
+                    android:textColor="#777777" />
+
+                <TextView
+                    android:id="@+id/tv_wd"
+                    style="@style/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/state_ico" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地址："
+                    android:textColor="#777777" />
+
+                <TextView
+                    android:id="@+id/tv_dz"
+                    style="@style/content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="报障信息"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="认证设备类型：" />
+
+                <TextView
+                    android:id="@+id/tv_rzsblx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="报障人：" />
+
+                <TextView
+                    android:id="@+id/tv_bzr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="报障人电话：" />
+
+                <TextView
+                    android:id="@+id/tv_lxdh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center" />
+
+                <ImageView
+                    android:id="@+id/iv_telphone"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/telphone" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="网点名称：" />
+
+                <TextView
+                    android:id="@+id/tv_wdmc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="详细地址：" />
+
+                <TextView
+                    android:id="@+id/tv_xxdz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="报维内容：" />
+
+                <TextView
+                    android:id="@+id/tv_gzxx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="上门方式：" />
+
+                <Spinner
+                    android:id="@+id/spinner_smfs"
+                    style="@style/edittext_sty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gzxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="故障信息"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gzxx_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:id="@+id/gzlb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t_gzdl"
+                    android:textColor="#4d4f4e" />
+
+                <Spinner
+                    android:id="@+id/sp_gzlb"
+                    style="@style/edittext_sty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/eodd"
+                    style="@style/text_image"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:id="@+id/gzzl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t_gzzl"
+                    android:textColor="#4d4f4e" />
+
+                <Spinner
+                    android:id="@+id/sp_gzzl"
+                    style="@style/edittext_sty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/eodzl"
+                    style="@style/text_image"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:id="@+id/gzxl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/t_gzxl"
+                    android:textColor="#4d4f4e" />
+
+                <Spinner
+                    android:id="@+id/sp_gzlbb"
+                    style="@style/edittext_sty"
+                    android:layout_width="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:id="@+id/eodgzlb"
+                    style="@style/text_image"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="故障处理过程：" />
+
+                <EditText
+                    android:id="@+id/et_clgc"
+                    style="@style/edittext_sty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ff0190eb" />
+
+                <ImageView
+                    style="@style/text_image"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="备注：" />
+
+                <EditText
+                    android:id="@+id/et_bz"
+                    style="@style/edittext_sty"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="#ff0190eb" />
+
+                <ImageView
+                    style="@style/text_image"
+                    android:contentDescription="@string/todo" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <include
+            android:id="@+id/include_botto"
+            layout="@layout/bottom_button" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="工单号：" />
+
+                <TextView
+                    android:id="@+id/tv_zbh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="安/修单号：" />
+
+                <TextView
+                    android:id="@+id/tv_axdh"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="小区名称：" />
+
+                <TextView
+                    android:id="@+id/tv_xqmc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="详细地址：" />
+
+                <TextView
+                    android:id="@+id/tv_xxdz"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="业务类型：" />
+
+                <TextView
+                    android:id="@+id/tv_ywlx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="设备类型：" />
+
+                <TextView
+                    android:id="@+id/tv_sblx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="故障现象：" />
+
+                <TextView
+                    android:id="@+id/tv_gzxx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="地市：" />
+
+                <TextView
+                    android:id="@+id/tv_ds"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="区县：" />
+
+                <TextView
+                    android:id="@+id/tv_qx"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="主柜数量：" />
+
+                <TextView
+                    android:id="@+id/tv_zgsl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="副柜数量：" />
+
+                <TextView
+                    android:id="@+id/tv_fgsl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="发货日期：" />
+
+                <TextView
+                    android:id="@+id/tv_fhrq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="到货日期：" />
+
+                <TextView
+                    android:id="@+id/tv_dhrq"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="设备预计进场时间：" />
+
+                <TextView
+                    android:id="@+id/tv_sbyjjcsj"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <include
+            android:id="@+id/include_botto"
+            layout="@layout/bottom_button" />
+    </LinearLayout>
+
+</ScrollView>

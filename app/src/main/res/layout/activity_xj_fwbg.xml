@@ -1,0 +1,1297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/content_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_gdxx_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="巡检基础信息"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_gdxx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/part"
+                android:orientation="vertical" >
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="序号"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_zbh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="柜子ID"
+                        android:textColor="@color/black" />
+
+                    <EditText
+                        android:id="@+id/et_gzid"
+                        style="@style/edittext_sty"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:hint="请录入柜子ID"
+                        android:textColor="#ff0190eb" />
+
+                    <ImageView
+                        style="@style/text_image"
+                        android:contentDescription="@string/todo" />
+                </LinearLayout>
+
+                <View
+                    style="@style/view_sty"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:gravity="center_vertical"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="服务咨询师：" />
+
+                    <TextView
+                        android:id="@+id/tv_fwgcs"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_telphone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/telphone" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="省份"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_sf"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="地市"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_ds"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="区县"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_qx"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="小区名称"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_xqmc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:id="@+id/ll_xxdz"
+                    style="@style/tablerow_sty"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/tablerow_sty"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="巡检人（需拍人机自拍照1张）"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_xjr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text=""
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    style="@style/tablerow_sty"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="巡检开始时间（需拍人脸监控签到照1张）（需精确到分，填写本机监控签到时的屏幕显示时间，人脸在监控上需停留10秒，需同时拍人脸监控签到照，签到照上要显示出年月日和时间）"
+                        android:textColor="@color/black" />
+
+                    <LinearLayout style="@style/tablerow_sty" >
+
+                        <EditText
+                            android:id="@+id/et_xjkssj"
+                            style="@style/edittext_sty"
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:focusable="false"
+                            android:hint="请选择时间"
+                            android:textColor="#ff0190eb" />
+
+                        <ImageView
+                            style="@style/text_image"
+                            android:contentDescription="@string/todo" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    style="@style/tablerow_sty"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="主柜数量 （需拍锁芯和钥匙照多张）"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="1"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    style="@style/tablerow_sty"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="副柜数量 （需拍正面整体照1张）"
+                        android:textColor="@color/black" />
+
+                    <Spinner
+                        android:id="@+id/spinner_fgsl"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/spinner"
+                        android:text="" />
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:id="@+id/ll_sx"
+                    style="@style/tablerow_sty"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wbggjcx_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="外部公共检查项"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wbggjcx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wbtjggaq_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="外部条件公共安全"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wbtjggaq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_spjc_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="水平检查"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_spjc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sngjcx_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="室内柜检查项"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sngjcx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hwgjcx_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="户外柜检查项"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hwgjcx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_s_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="电子锁整改"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_s"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ggjcx_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="公共检查项"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_ggjcx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jssj_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="巡检结束"
+                android:textColor="#ff0190eb"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_jssj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                style="@style/tablerow_sty"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="巡检结束时间（需拍人脸监控签到照1张）（需精确到分，填写本机监控签退时的屏幕显示时间，人脸在监控上需停留10秒，需同时拍人脸监控签退照，签退照上要显示出年月日和时间）"
+                    android:textColor="@color/black" />
+
+                <LinearLayout style="@style/tablerow_sty" >
+
+                    <EditText
+                        android:id="@+id/et_xjjssj"
+                        style="@style/edittext_sty"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:focusable="false"
+                        android:hint="请选择时间"
+                        android:textColor="#ff0190eb" />
+
+                    <ImageView
+                        style="@style/text_image"
+                        android:contentDescription="@string/todo" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pz_p"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicereport_bg_ico"
+            android:minHeight="30dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:gravity="center_vertical"
+                android:text="拍照"
+                android:textColor="#ff0190eb" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_pz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/part"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="室内柜连接照片" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_1"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="显示屏照片（高清全屏）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_2"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="摄像头（画面）（高清全屏）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_3"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（前 ）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_4"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（后）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_5"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（左）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_6"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（右）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_7"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（右）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_8"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（右）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_9"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（右）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_10"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（右）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_11"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View style="@style/view_sty" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:minHeight="30dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_pz_12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="柜子整体照片（右）" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6"
+                        android:gravity="center"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/image_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:visibility="gone" />
+
+                        <EditText
+                            android:id="@+id/et_12"
+                            style="@style/edittext_sty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/btn_normal"
+                            android:focusable="false"
+                            android:gravity="center"
+                            android:text="点击拍照"
+                            android:textColor="@color/white"
+                            android:textSize="13dp" >
+                        </EditText>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_pz_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <View style="@style/view_sty" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:minHeight="30dp"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/tv_pz_13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:text="柜子整体照片（右）" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dip"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="6"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/image_13"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:visibility="gone" />
+
+                            <EditText
+                                android:id="@+id/et_13"
+                                style="@style/edittext_sty"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/btn_normal"
+                                android:focusable="false"
+                                android:gravity="center"
+                                android:text="点击拍照"
+                                android:textColor="@color/white"
+                                android:textSize="13dp" >
+                            </EditText>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="30dp" />
+
+        <include
+            android:id="@+id/include_botto"
+            layout="@layout/bottom_button" />
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\application\\Android\\workspace\\dzpt\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v8\\values-v8.xml",
+            "map": [
+                {
+                    "source": "D:\\application\\Android\\workspace\\dzpt\\app\\src\\main\\res\\values-v8\\styles.xml",
+                    "from": {
+                        "startLines": "20,12",
+                        "startColumns": "4,4",
+                        "startOffsets": "711,326",
+                        "endLines": "26,18",
+                        "endColumns": "12,12",
+                        "endOffsets": "1088,703"
+                    },
+                    "to": {
+                        "startLines": "2,9",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,431",
+                        "endLines": "8,15",
+                        "endColumns": "12,12",
+                        "endOffsets": "426,802"
+                    }
+                }
+            ]
+        }
+    ]
+}

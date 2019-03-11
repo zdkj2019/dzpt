@@ -1,0 +1,874 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/content_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/textV5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_pgdh"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_pgdh"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textV5" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:background="#FFE7BA"
+            android:layout_height="5dp"
+            />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <ImageView
+                android:id="@+id/iv_supq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/fwbg_1" />
+
+            <TextView
+                android:id="@+id/TextVxq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_supq"
+                android:text="@string/t_supq"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_supq"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextVxq"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/TextVsupq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_02"
+                android:text="@string/t_suqy"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_suqy"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextVsupq"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/textbzr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_03"
+                android:text="@string/t_bzr"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_bzr"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textbzr" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/TextVxxdz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_04"
+                android:text="@string/t_xxdz"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/et_xxdz"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextVxxdz"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/TextVzsdz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_05"
+                android:text="@string/t_zsdz"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/et_zsdz"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextVzsdz"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/TextVjsdw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_jsdw"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_jsdw"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextVjsdw"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/textV6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_06"
+                android:text="报障人电话："
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_lxdh"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textV6" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:background="#FFE7BA"
+            android:layout_height="5dp" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <ImageView
+                android:id="@+id/iv_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/fwbg_2" />
+
+            <TextView
+                android:id="@+id/tv_sbbm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_2"
+                android:text="设备编码："
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/et_sbbm"
+                style="@style/edittext_sty"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+
+            <Button
+                android:id="@+id/bt_sbbm"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_normal"
+                android:text="扫描"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/textgzxx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_07"
+                android:text="故障描述："
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_gzxx"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textgzxx" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/gzlb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_11"
+                android:text="@string/t_gzdl"
+                android:textColor="#4d4f4e" />
+
+            <Spinner
+                android:id="@+id/sp_gzlb"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/gzlb" />
+
+            <ImageView
+                android:id="@+id/eodd"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/gzzl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_12"
+                android:text="@string/t_gzzl"
+                android:textColor="#4d4f4e" />
+
+            <Spinner
+                android:id="@+id/sp_gzzl"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/gzzl" />
+
+            <ImageView
+                android:id="@+id/eodzl"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/gzxl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_13"
+                android:text="@string/t_gzxl"
+                android:textColor="#4d4f4e" />
+
+            <Spinner
+                android:id="@+id/sp_gzlbb"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/gzxl" />
+
+            <ImageView
+                android:id="@+id/eodgzlb"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:background="#FFE7BA"
+            android:layout_height="5dp" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <ImageView
+                android:id="@+id/iv_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="1dp"
+                android:src="@drawable/fwbg_3" />
+
+            <TextView
+                android:id="@+id/TextV1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/iv_3"
+                android:text="@string/t_wxaz"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_wxaz"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextV1"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/ssgzyy"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" android:id="@+id/v_pgzt"/>
+
+        <RelativeLayout style="@style/tablerow_sty"  android:id="@+id/tl_pgzt">
+
+            <TextView
+                android:id="@+id/tv_09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/pgzt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_09"
+                android:text="派工状态："
+                android:textColor="#4d4f4e" />
+
+            <Spinner
+                android:id="@+id/spinner_pgzt"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_toRightOf="@+id/pgzt" />
+
+            <ImageView
+                android:id="@+id/iv_pgzt"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/textV6f4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_14"
+                android:text="@string/t_clfs"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_clfs"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textV6f4" />
+
+            <TextView
+                android:id="@+id/cljgd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="@string/_xin" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/textwgyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_15"
+                android:text="处理过程："
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_wgyy"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textwgyy"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/wgyy"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/TextV13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_16"
+                android:text="@string/t_xzpj"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_xzpj"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/TextV13"
+                android:singleLine="false"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/sy"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout style="@style/tablerow_sty" >
+
+            <TextView
+                android:id="@+id/tv_17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/cljg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_17"
+                android:text="@string/t_cljg"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_cljg"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/cljg" />
+
+            <TextView
+                android:id="@+id/eecljgd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:text="@string/_xin" />
+        </RelativeLayout>
+
+        <View style="@style/view_sty" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="visible" >
+
+            <TextView
+                android:id="@+id/tv_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="         " />
+
+            <TextView
+                android:id="@+id/gzyy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/tv_18"
+                android:text="@string/t_bz"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_bz"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/gzyy"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/bz"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textmmjpxlh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_mmjpxlh"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_mmjpxlh"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textmmjpxlh"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/mmjpxlh"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/texteposcs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_eposcs"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_eposcs"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/texteposcs"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/eposcs"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textxh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_xh"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_xh"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textxh"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/xh"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textshbh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_shbh"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_shbh"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textshbh"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/shbh"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/textbddh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_bddh"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/tv_bddh"
+                style="@style/edittext_sty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/textbddh"
+                android:inputType="number"
+                android:textColor="#ff0190eb" />
+
+            <ImageView
+                android:id="@+id/bddh"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/TextVyuyuetime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/t_yuyuetime"
+                android:textColor="#4d4f4e" />
+
+            <TextView
+                android:id="@+id/tv_yuyuetime"
+                style="@style/edittext_sty"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/TextVyuyuetime"
+                android:singleLine="true"
+                android:textColor="#ff0190eb" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            style="@style/tablerow_sty"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/zdh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="终端号:"
+                android:textColor="#4d4f4e" />
+
+            <EditText
+                android:id="@+id/et_zdh"
+                style="@style/edittext_sty"
+                android:layout_width="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@+id/zdh" />
+
+            <ImageView
+                android:id="@+id/iv_zdh"
+                style="@style/text_image"
+                android:contentDescription="@string/todo" />
+        </RelativeLayout>
+
+        <View
+            style="@style/view_sty"
+            android:visibility="gone" />
+
+        <View
+            style="@style/view_sty"
+            android:layout_marginBottom="20dp" />
+
+        <include
+            android:id="@+id/include_botton"
+            layout="@layout/bottom_button" />
+    </LinearLayout>
+
+</ScrollView>

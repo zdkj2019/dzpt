@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\application\\Android\\workspace\\dzpt\\app\\build\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-sw600dp-v13\\values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "D:\\application\\Android\\workspace\\dzpt\\app\\src\\main\\res\\values-sw600dp\\dimens.xml",
+                    "from": {
+                        "startLines": "6",
+                        "startColumns": "0",
+                        "startOffsets": "187",
+                        "endColumns": "37",
+                        "endOffsets": "224"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "41",
+                        "endOffsets": "92"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:gravity="center_vertical"
+    android:minHeight="30dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text=""
+        android:textColor="@color/black" />
+
+    <LinearLayout style="@style/tablerow_sty" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="锁芯编号"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/et_sx"
+            style="@style/edittext_sty"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:textColor="#ff0190eb" />
+
+        <ImageView
+            style="@style/text_image"
+            android:contentDescription="@string/todo" />
+    </LinearLayout>
+
+    <LinearLayout style="@style/tablerow_sty" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="有无钥匙"
+            android:textColor="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/rg_0"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有"
+                android:textColor="@color/black" />
+
+            <RadioButton
+                android:id="@+id/rb_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无"
+                android:textColor="@color/black" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <View style="@style/view_sty" />
+
+</LinearLayout>

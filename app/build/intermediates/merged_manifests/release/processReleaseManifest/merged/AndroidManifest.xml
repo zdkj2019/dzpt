@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.single.gtdzpt"
+    android:installLocation="internalOnly"
+    android:versionCode="2"
+    android:versionName="5.01" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="28" />
+
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 在SDCard中创建于删除文件的权限 -->
+    <!-- 往SDCard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+
+    <application
+        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="hHYCCwp3R7iFipSfiPxPOedPvDRBAOwO" />
+
+        <activity
+            android:name="com.single.activity.load.LoadingActivity"
+            android:icon="@drawable/logo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.single.activity.login.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.MainMenuActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.InformationReceivinglist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.InformationReceivinglist_Dzqd"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.InformationReceivingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.InformationReceivingActivity_Dzqd"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ArrivalConfirmationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.BaiDuGpsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ServiceReportslist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ServiceReportsComplete"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ServiceReportsAppraiseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ZZServiceReportslist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.BusinessAcceptanceSure"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.PGDCaseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.js.FyqrActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.PGDquerychooseActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.PGDqueryActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.js.FyqrCompleteActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.w.ChangePasswordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseXQ"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseFBF"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseSblx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseSb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseFylx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseKhwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseSssqx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.AddPartsAdd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChoosePjlx"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.AddParts"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.js.YingShouKuanList"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.js.LiuShuiZhanglist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.js.LiuShuiZhangActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.YytReportedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.CustomerDispatchinglist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.CustomerDispatchingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.TimeYuyuelist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.TimeYuyueActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.DispatchingInformationReceivingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.DispatchingInformationConfirmActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ShowGpsActivity"
+            android:screenOrientation="portrait" />
+        <!-- android:windowSoftInputMode="stateVisible|adjustResize"弹出键盘 -->
+        <activity
+            android:name="com.single.activity.esp.ServiceReportsConfirmActivity"
+            android:screenOrientation="portrait" />
+        <!-- android:windowSoftInputMode="stateHidden|adjustPan" 隐藏键盘 -->
+
+        <activity
+            android:name="com.single.activity.esp.KHchooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseYYT"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ServiceReportsAppraise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.SheBeiPDActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.NotificationOrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.NotificationOrderList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.ChooseAZXQ"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.BusinessQueryList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.BusinessQueryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.SingleInActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.register.RegisterActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.register.RegisterConfirmActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.register.RegisterAgreeActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.register.RegisterCompleteActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.esp.RyxxActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.QyxxActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.esp.JbxxActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.YhkxxActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.YHKInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.XxglActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.XxglShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.esp.InformationReceivingRefuseList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.esp.InformationReceivingRefuseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kc.KccxActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kc.KccxShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.YHKMbActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kc.WbdbckActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kc.WbdbckMxActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.esp.ChooseActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kc.WbdbrkListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kc.WbdbrkActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.main.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.ListKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.ZzzpKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.JdxyKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.FwbgKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.SmdwKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.JqgdcxKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.JqgdcxShowKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.SbxxlrKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.JdxyXj"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.SmdwXj"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.FwbgXj"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.SelectZfg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.DhjcKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.ZzzpCxKdg"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.ZzzpCxTj"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.esp.XjListActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.esp.XjShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.util.DataFilterActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.util.ImgPz"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.util.ImgChoose"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.util.ImagePagerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.util.ImgChoosePage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.single.activity.w.Fwzxscx"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.FwzxscxList"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.YjgdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.FwzxscxShow"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.kdg.Zzpqgdcx"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.Pqzgjk"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.SetParams"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.GzpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.GzpLrActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.HelpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.JszlActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.GlzdActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.CjwtActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.LyActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.CjwtShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.LyaddActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.LyqueryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.activity.w.GlzdShowActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.single.zxing.CaptureActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+        </activity>
+
+        <service android:name="com.single.service.PatrolService" />
+        <service android:name="com.single.service.NumberService" />
+        <service android:name="com.single.service.JdtxService" />
+        <service android:name="com.single.service.CsyyService" />
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
+        <!--
+        <receiver android:name="com.single.service.StartupReceiver" >
+            <intent-filter>
+                系统启动完成后会调用
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        -->
+
+
+        <!--
+        <provider
+            android:name="com.single.utils.contentprovider.MyContentProvider"
+            android:authorities=".MyContentProvider" >
+        </provider>
+        -->
+
+
+        <!-- 如果你的app支持android7.0及以上，那么在android apk的时候临时给app授权访问文件的权限 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.single.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

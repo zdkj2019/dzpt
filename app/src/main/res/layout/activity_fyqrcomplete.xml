@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="center_vertical"
+                android:text="工单信息"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/part"
+            android:orientation="vertical" >
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="服务人员" />
+
+                <TextView
+                    android:id="@+id/tv_1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="标准价格" />
+
+                <TextView
+                    android:id="@+id/tv_2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="其他费用" />
+
+                <TextView
+                    android:id="@+id/tv_3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" />
+
+            <LinearLayout style="@style/tablerow_sty" android:id="@+id/ll_jl">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="奖励" />
+
+                <TextView
+                    android:id="@+id/tv_4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+
+            <View style="@style/view_sty" android:id="@+id/ll_jl_line"/>
+
+            <LinearLayout style="@style/tablerow_sty" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="总计" />
+
+                <TextView
+                    android:id="@+id/tv_5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp" />
+
+        <include
+            android:id="@+id/include_botto"
+            layout="@layout/bottom_button" />
+    </LinearLayout>
+
+</ScrollView>

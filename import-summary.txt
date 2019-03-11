@@ -1,0 +1,121 @@
+ECLIPSE ANDROID PROJECT IMPORT SUMMARY
+======================================
+
+Ignored Files:
+--------------
+The following files were *not* copied into the new Gradle project; you
+should evaluate whether these are still needed in your project and if
+so manually move them:
+
+* .amateras
+* .idea\
+* .idea\.name
+* .idea\.svn\
+* .idea\.svn\all-wcprops
+* .idea\.svn\entries
+* .idea\.svn\text-base\
+* .idea\.svn\text-base\.name.svn-base
+* .idea\.svn\text-base\compiler.xml.svn-base
+* .idea\.svn\text-base\dzpt.iml.svn-base
+* .idea\.svn\text-base\encodings.xml.svn-base
+* .idea\.svn\text-base\misc.xml.svn-base
+* .idea\.svn\text-base\modules.xml.svn-base
+* .idea\.svn\text-base\vcs.xml.svn-base
+* .idea\.svn\text-base\workspace.xml.svn-base
+* .idea\compiler.xml
+* .idea\copyright\
+* .idea\copyright\.svn\
+* .idea\copyright\.svn\all-wcprops
+* .idea\copyright\.svn\entries
+* .idea\copyright\.svn\text-base\
+* .idea\copyright\.svn\text-base\profiles_settings.xml.svn-base
+* .idea\copyright\profiles_settings.xml
+* .idea\dzpt.iml
+* .idea\encodings.xml
+* .idea\misc.xml
+* .idea\modules.xml
+* .idea\scopes\
+* .idea\scopes\.svn\
+* .idea\scopes\.svn\all-wcprops
+* .idea\scopes\.svn\entries
+* .idea\scopes\.svn\text-base\
+* .idea\scopes\.svn\text-base\scope_settings.xml.svn-base
+* .idea\scopes\scope_settings.xml
+* .idea\vcs.xml
+* .idea\workspace.xml
+* hs_err_pid10732.log
+* hs_err_pid14680.log
+* hs_err_pid19648.log
+* hs_err_pid19816.log
+* ic_launcher-web.png
+* proguard-project.txt
+* proguard\
+* proguard\.svn\
+* proguard\.svn\all-wcprops
+* proguard\.svn\entries
+* proguard\.svn\text-base\
+* proguard\.svn\text-base\dump.txt.svn-base
+* proguard\.svn\text-base\mapping.txt.svn-base
+* proguard\.svn\text-base\seeds.txt.svn-base
+* proguard\.svn\text-base\usage.txt.svn-base
+* proguard\dump.txt
+* proguard\mapping.txt
+* proguard\seeds.txt
+* proguard\usage.txt
+
+Replaced Jars with Dependencies:
+--------------------------------
+The importer recognized the following .jar files as third party
+libraries and replaced them with Gradle dependencies instead. This has
+the advantage that more explicit version information is known, and the
+libraries can be updated automatically. However, it is possible that
+the .jar file in your project was of an older version than the
+dependency we picked, which could render the project not compileable.
+You can disable the jar replacement in the import wizard and try again:
+
+android-support-v4.jar => com.android.support:support-v4:21.0.3
+
+Moved Files:
+------------
+Android Gradle projects use a different directory structure than ADT
+Eclipse projects. Here's how the projects were restructured:
+
+* AndroidManifest.xml => app\src\main\AndroidManifest.xml
+* assets\ => app\src\main\assets\
+* libs\arm64-v8a\libBaiduMapSDK_base_v4_3_0.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_base_v4_3_0.so
+* libs\arm64-v8a\libBaiduMapSDK_map_v4_3_0.so => app\src\main\jniLibs\arm64-v8a\libBaiduMapSDK_map_v4_3_0.so
+* libs\arm64-v8a\liblocSDK7a.so => app\src\main\jniLibs\arm64-v8a\liblocSDK7a.so
+* libs\armeabi-v7a\libBaiduMapSDK_base_v4_3_0.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_base_v4_3_0.so
+* libs\armeabi-v7a\libBaiduMapSDK_map_v4_3_0.so => app\src\main\jniLibs\armeabi-v7a\libBaiduMapSDK_map_v4_3_0.so
+* libs\armeabi-v7a\liblocSDK7a.so => app\src\main\jniLibs\armeabi-v7a\liblocSDK7a.so
+* libs\armeabi\libBaiduMapSDK_map_v4_3_0.so => app\src\main\jniLibs\armeabi\libBaiduMapSDK_map_v4_3_0.so
+* libs\badgeview.jar => app\libs\badgeview.jar
+* libs\BaiduLBS_Android.jar => app\libs\BaiduLBS_Android.jar
+* libs\commons-httpclient-3.0.1.jar => app\libs\commons-httpclient-3.0.1.jar
+* libs\core.jar => app\libs\core.jar
+* libs\GifView.jar => app\libs\GifView.jar
+* libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar => app\libs\ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar
+* libs\universal-image-loader-1.9.5.jar => app\libs\universal-image-loader-1.9.5.jar
+* libs\x86\libBaiduMapSDK_base_v4_3_0.so => app\src\main\jniLibs\x86\libBaiduMapSDK_base_v4_3_0.so
+* libs\x86\libBaiduMapSDK_map_v4_3_0.so => app\src\main\jniLibs\x86\libBaiduMapSDK_map_v4_3_0.so
+* libs\x86\liblocSDK7a.so => app\src\main\jniLibs\x86\liblocSDK7a.so
+* libs\x86_64\libBaiduMapSDK_base_v4_3_0.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_base_v4_3_0.so
+* libs\x86_64\libBaiduMapSDK_map_v4_3_0.so => app\src\main\jniLibs\x86_64\libBaiduMapSDK_map_v4_3_0.so
+* libs\x86_64\liblocSDK7a.so => app\src\main\jniLibs\x86_64\liblocSDK7a.so
+* res\ => app\src\main\res\
+* src\ => app\src\main\java\
+
+Next Steps:
+-----------
+You can now build the project. The Gradle project needs network
+connectivity to download dependencies.
+
+Bugs:
+-----
+If for some reason your project does not build, and you determine that
+it is due to a bug or limitation of the Eclipse to Gradle importer,
+please file a bug at http://b.android.com with category
+Component-Tools.
+
+(This import summary is for your information only, and can be deleted
+after import once you are satisfied with the results.)
